@@ -10,7 +10,6 @@ public class Main {
         acceptedCommands.add("-dp");
         acceptedCommands.add("-h");
         acceptedCommands.add("-w");
-        acceptedCommands.add("-print");
 
         HashMap<String, List<String>> parameters = new HashMap<>();
         List<String> options = null;
