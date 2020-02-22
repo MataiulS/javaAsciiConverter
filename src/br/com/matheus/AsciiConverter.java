@@ -35,9 +35,9 @@ public class AsciiConverter {
             bufferedImage = colorConvertOp.filter(bufferedImage, null);
 
             StringBuilder sb = new StringBuilder((width+1) * height);
-            for (int y = 0; y < width; y++) {
+            for (int y = 0; y < height; y++) {
                 if (sb.length() != 0) sb.append("\n");
-                for (int x = 0; x < height; x++) {
+                for (int x = 0; x < width; x++) {
                     int grayVal = bufferedImage.getRGB(x, y) & 0xFF;
                     checkScale(sb, grayVal);
                 }
